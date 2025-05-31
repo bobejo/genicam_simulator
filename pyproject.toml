@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling""]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
@@ -9,18 +9,9 @@ readme = "README.md"
 license = "MIT"
 requires-python = ">=3.8"
 keywords = [
-  "build",
-  "dependency",
-  "environment",
-  "hatch",
-  "packaging",
-  "plugin",
-  "publishing",
-  "release",
-  "versioning",
 ]
 authors = [
-  { name = "Ofek Lev", email = "oss@ofek.dev" },
+  { name = "singemar"},
 ]
 classifiers = [
   "Intended Audience :: Developers",
@@ -35,7 +26,9 @@ classifiers = [
   "Programming Language :: Python :: 3.13",
 ]
 dependencies = [
-]
+  "harvesters",
+  "pyyaml",
+  ]
 dynamic = ["version"]
 
 [project.urls]
